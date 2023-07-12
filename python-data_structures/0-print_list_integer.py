@@ -1,3 +1,4 @@
 #!/usr/bin/python3
-a = [1,2,3,4,5,6,7,8,9]
-print(str(a)[1:])
+def print_list_integer(my_list=[1,2,3,4,5,6,7,8,9]):
+    for num in my_list:
+        print(my_list)
