@@ -2,6 +2,6 @@
 "Empty square"
 
 
-class Square :
+class Square:
     'empty square'
     pass
