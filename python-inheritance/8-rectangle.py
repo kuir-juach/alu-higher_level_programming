@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """ triangle module importing geometry """
 
-:
+
 BaseGeometry =___import___("my_module").BaseGeometry
 
 
