@@ -2,7 +2,7 @@
 """ triangle module importing geometry """
 
 
-BaseGeometry = __import__("8-base_geometry").BaseGeometry
+BaseGeometry = __import__("my_module").BaseGeometry
 
 
 class Rectangle(BaseGeometry):
