@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 """ triangle module importing geometry """
 
-
-BaseGeometry = ___import___("my_module").BaseGeometry
+:
+BaseGeometry =___import___("my_module").BaseGeometry
 
 
 class Rectangle(BaseGeometry):
@@ -11,6 +11,6 @@ class Rectangle(BaseGeometry):
     def___init___(self, width, height):
         """ init class """
         self.integer_validator("width", width)
-        self.___width = width
+        self.__width = width
         self.integer_validator("height", height)
-        self.___height = height
+        self.__height = height
