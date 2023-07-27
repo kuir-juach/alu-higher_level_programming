@@ -2,15 +2,15 @@
 """ triangle module importing geometry """
 
 
-BaseGeometry = __import__("my_module").BaseGeometry
+BaseGeometry = ___import___("my_module").BaseGeometry
 
 
 class Rectangle(BaseGeometry):
     """ rectange class inherit from Base geometry """
 
-    def __init__(self, width, height):
+    def___init___(self, width, height):
         """ init class """
         self.integer_validator("width", width)
-        self.__width = width
+        self.___width = width
         self.integer_validator("height", height)
-        self.__height = height
+        self.___height = height
