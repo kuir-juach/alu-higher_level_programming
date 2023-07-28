@@ -1,24 +1,25 @@
 #!/usr/bin/python3
-""" triangle module importing geometry """
+"""defines class Rectangle that inherits from BaseGeometry"""
 
 
-BaseGeometry = _import_("7-base_geometry").BaseGeometry
+BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
 
 class Rectangle(BaseGeometry):
-    """ rectange class inherit from Base geometry """
-
-    def _init_(self, width, height):
-        """ init class """
+    """class for rectangle that inherits from BaseGeometry
+    with print() and str() ability"""
+    def __init__(self, width, height):
+        """initializes Rectangle instance"""
         self.integer_validator("width", width)
         self.__width = width
         self.integer_validator("height", height)
         self.__height = height
 
-    def area(self):
-        """ override implement area """
-        return (self.__width * self.__height)
+    def __str__(self):
+        """string representation of Rectangle"""
+        str_rep = "[Rectangle] " + str(self.__width) + "/" + str(self.__height)
+        return str_rep
 
-    def _str_(self):
-        """ area string represent """
-        return ("[Rectangle] {:d}/{:d}".format(self.__width, self.__height))
+    def area(self):
+        """returns area of rectangle"""
+        return (self.__width * self.__height)
