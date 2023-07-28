@@ -1,12 +1,10 @@
 #!/usr/bin/python3
-'''The List functions are inherited by this file'''
+''' No modules imported '''
 
 
 class MyList(list):
-    '''This Class Inherits Function List'''
+    '''Our base class is list '''
 
     def print_sorted(self):
-        '''the code below prints the list In a sorted manner '''
-        sorted_list = self[:]
-        sorted_list.sort()
-        print("{}".format(sorted_list))
+        ''' The function to print sorted list in ascending order '''
+        print(sorted(self))
