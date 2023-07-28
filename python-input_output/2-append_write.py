@@ -1,10 +1,8 @@
 #!/usr/bin/python3
-'''function that returns the JSON representation of an object (string)'''
+"""defines function to appends string to text file"""
 
 
-import json
-
-
-def to_json_string(my_obj):
-    '''The real function that returns a json obj'''
-    return json.dumps(my_obj)
+def append_write(filename="", text=""):
+    """appends string to text file"""
+    with open(filename, 'a') as f:
+        return f.write(text)
