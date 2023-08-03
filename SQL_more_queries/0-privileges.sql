@@ -1,4 +1,3 @@
--- lists all privileges of MySQL users user_0d_1 and user_0d_2
--- privileges are listed on localhost server
-SHOW GRANTS FOR user_0d_1@localhost;
-SHOW GRANTS FOR user_0d_2@localhost;
+-- a script that lists all privilges of the MySQL users_0d_1 and user_0d_2.
+SHOW GRANTS FOR 'user_0d_1'@'localhost';
+SHOW GRANTS FOR 'user_0d_2'@'localhost';
