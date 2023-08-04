@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""sends a request to the URL and displays the value of the variable"""
+"""a Python script that takes in a URL """
 
 
 import requests
@@ -7,7 +7,11 @@ import sys
 
 
 if __name__ == "__main__":
-    """shows value of variable"""
+    """sends the variable email"""
     url = sys.argv[1]
-    reply = requests.get(url)
-    print("{}".format(reply.headers.get('X-Request-Id')))
+    email = sys.argv[2]
+    context = {
+        "email": email
+    }
+    reply = requests.post(url, data=context)
+    print("{}".format(reply.text))
