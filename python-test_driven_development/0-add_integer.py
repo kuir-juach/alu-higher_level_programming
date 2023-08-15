@@ -1,12 +1,21 @@
 #!/usr/bin/python3
-""" This function 'add_integer' takes in two arguments """
-"""and returns the sum of the two."""
+"""a function that adds 2 integers"""
 
 
 def add_integer(a, b=98):
-    """Should the conditions be met, Raising the type error message"""
-    if type(a) != int and type(a) != float:
+    """
+    Adds and returns sum of a and b
+    - Args :
+        a: int or float
+        b: int or float, default 98
+    """
+    if type(a) == float or type(b) == float:
+        a = int(a)
+        b = int(b)
+
+    if type(a) != int:
         raise TypeError("a must be an integer")
-    if type(b) != int and type(b) != float:
+    if type(b) != int:
         raise TypeError("b must be an integer")
-    return int(a) + int(b) 
+
+    return a + b
